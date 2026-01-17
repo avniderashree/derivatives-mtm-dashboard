@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from typing import List, Dict, Optional, Union
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime
 from collections import defaultdict
 
 from .instruments import (
@@ -318,7 +318,6 @@ class MTMEngine:
             Dictionary with sensitivity DataFrames
         """
         base_spot = market_data.spot_price
-        base_vol = market_data.volatility
         
         # Spot sensitivity
         spot_changes = np.linspace(spot_range[0], spot_range[1], n_points)

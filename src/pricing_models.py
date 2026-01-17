@@ -6,7 +6,7 @@ Option pricing using Black-Scholes, Binomial Tree, and Monte Carlo methods.
 
 import numpy as np
 from scipy.stats import norm
-from typing import Literal, Optional
+from typing import Optional
 from dataclasses import dataclass
 from enum import Enum
 
